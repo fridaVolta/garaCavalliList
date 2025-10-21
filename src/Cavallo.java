@@ -2,15 +2,10 @@ public class Cavallo extends Thread{
 
     private final String name;
     private int lentezza;
-    private String  primo;
     public Cavallo(String name, int lentezza) {
         super();
         this.name = name;
         this.lentezza = lentezza;
-    }
-    public Cavallo(String name){
-        super();
-        this.name = name;
     }
     /**override del metodo run */
     @Override
@@ -29,7 +24,7 @@ public class Cavallo extends Thread{
             Main.setPrimo(this.name);
         }
     }
-    /**getter per il parametro di lentezza */
+    /**getter per il parametro di lentezza SUPERFLUI*/
     protected int getLentezza(){
         return lentezza;
     }
